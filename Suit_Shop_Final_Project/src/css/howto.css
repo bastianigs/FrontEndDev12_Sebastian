@@ -1,0 +1,95 @@
+/* content */
+
+body {
+    background-color: #fafafa;
+}
+
+.container {
+    width: 100%;
+}
+
+.summary {
+    background-image: url("/src/images/howitworks.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 15rem;
+}
+
+.instructions {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.step {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+    .step img {
+        height: 200px;
+    }
+
+.text {
+    width: 45%;
+}
+
+h2, p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+p {
+    color: grey;
+}
+
+h5 {
+    margin-top: 20px;
+}
+
+.laststep {
+    text-align: center;
+    margin-bottom: 50px;
+}
+    .laststep img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+
+@media (min-width: 581px) and (max-width: 700px) {
+    .summary {
+        height: 10rem;
+    }
+    .step {
+        flex-direction: column;
+    }
+        .step img {
+            height: 200px;
+        }
+    .text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .summary {
+        height: 7rem;
+    }
+        .summary-info {
+            width: 100%;
+        }
+
+    .step {
+        flex-direction: column;
+    }
+        .step img {
+            height: 150px;
+        }
+    .text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

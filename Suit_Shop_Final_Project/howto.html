@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowTo | Suits Shop</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/howto.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="/src/images/logos.jpg">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-left">
+            <a href="index.html"><img src="/src/images/logo.jpg" alt="logo"></a>
+            <div class="dropdown">
+                <a id="our-collection">OUR COLLECTION</a>
+                    <div class="dropdown-content">
+                        <a href="outfits.html">COMPLETE OUTFITS</a>
+                        <a id="lookbuilder">LOOK BUILDER</a>
+                        <a href="products.html">ALL PRODUCTS</a>
+                    </div>
+            </div>
+            <a href="howto.html">HOW IT WORKS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div id="navbar-right">
+            <div id="admin-access">
+                <a id="admin-icon"><i class="fas fa-user-cog"></i></a>
+                <form id="admin-login">
+                    <h4>Admin Panel</h4>
+                        <label for="admin-name">Username:</label>
+                        <input type="text" id="admin-name">
+                        <label for="admin-pass">Password:</label>
+                        <input type="password" id="admin-pass" autocomplete="on">
+                        <a id="admin-login-btn">LOGIN</a>
+                </form>
+            </div>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="summary">
+            <div class="summary-info">
+                <h1>How It Works</h1>
+                <!-- <h1>Choose Your Style</h1>
+                <p>Designed For You</p> -->
+            </div>
+        </div>
+        <div class="instructions">
+            <div class="step">
+                <div class="text">
+                    <h2>1.Choose Your Style</h2>
+                    <h5>DESIGNED FOR YOU</h5>
+                    <p>Our standards for design have always been high—and the tuxedos we were finding just weren’t cutting it. Formal wear should be an all-around awesome experience, so we offer in-house designs at prices your wallet will love, too.</p>
+                    <h5>MODERN FIT, CLASSIC CONSTRUCTION</h5>
+                    <p>We make our suits and tuxedos with 100% merino wool and full-canvas construction for a better fit and natural drape that doesn’t leave you feeling stiff and boxy (talk about awkward).</p>
+                </div>
+                <img src="/src/images/howto.png" alt="howto">
+            </div>
+            <div class="step">
+                <img src="/src/images/empty-look.png" alt="howto">
+                <div class="text">
+                    <h2>2.Add To Look Builder</h2>
+                    <h5>COMPLETE OUTFIT</h5>
+                    <p>Choose the products that seem to fit in a complete outfit you would pay for. Your taste and our pieces will work together to make you happy.</p>
+                    <h5>DEEP VIEW ON THE FINAL PRODUCT</h5>
+                    <p>Look Builder will list all the chosen products and create an image of the desired outfit, so you can look closer to it and decide what's missing or what doesn't fit and can be changed.</p>
+                </div>
+            </div>
+            <div class="laststep">
+                <h2>3</h2>
+                <h5>ORDER IT, WEAR IT, SHINE</h5>
+                <img src="/src/images/suits.jpg" alt="suits">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Suits Shop © 2021 All Rights Reserved</p>
+        <div>
+            <a href=""><i id="instagram" class="fab fa-instagram"></i></a>
+            <a href=""><i id="facebook" class="fab fa-facebook-f"></i></a>
+            <a href=""><i id="pinterest" class="fab fa-pinterest-p"></i></a>
+            <a href=""> <i id="twitter" class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="/src/app.js"></script>
+</body>
+</html>

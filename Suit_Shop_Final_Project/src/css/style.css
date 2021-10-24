@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* global classes */
+
+.wrong {
+    border: 2px solid red;
+}
+
+#our-collection {
+    cursor: default;
+}
+
+/* navbar */
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-right: 20px;
+    z-index: 1;
+}
+    #navbar-left {
+        display: flex;
+        align-items: center;
+        font-size: x-small;
+    }
+    #navbar a {
+        text-decoration: none;
+        color: white;
+        margin: 20px;
+    }
+    #navbar a[href="index.html"] {
+        margin: 0;
+        padding: 0;
+    }
+    #navbar a:hover {
+        color: grey;
+    }
+    #navbar img {
+        width: 55px;
+    }
+    #navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 20px;
+}
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
+#admin-icon:hover {
+    cursor: pointer;
+}
+
+#lookbuilder:hover {
+    cursor: pointer;
+}
+
+#admin-login {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    position: fixed;
+    right: 10px;
+    top: 43px;
+    margin-top: 20px;
+    padding: 15px 10px 0 10px;
+    display: none;
+    flex-direction: column;
+}
+    /* #admin-access:hover #admin-login {
+        display: flex;
+    } */
+    #admin-login h4 {
+        text-decoration: underline;
+        margin-bottom: 10px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #admin-login label {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: small;
+        margin-top: 10px;
+    }
+    #admin-login a {
+        border: 2px solid teal;
+        text-align: center;
+        background-color: teal;
+        padding: 2px 0;
+        font-size: small;
+    }
+    #admin-login a:hover {
+        cursor: pointer;
+        background-color: rgb(0, 100, 100);
+        border-color: rgb(0, 100, 100);
+        color: white;
+    }
+
+/* footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    top: 55px;
+    padding: 15px;
+    background-color: rgb(48, 48, 48);
+    color: rgb(151, 151, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    footer p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: small;
+    }
+    footer i {
+        color: rgb(151, 151, 151);
+        background-color: black;
+        padding: 7px;
+        border-radius: 100%;
+        margin-top: 10px;
+    }
+    footer i:hover {
+        background-color: rgb(151, 151, 151);
+        /* color: black; */
+        color: white;
+    }
+    #facebook:hover, #twitter:hover {
+        background-color: rgb(66, 148, 255);
+    }
+
+    #instagram:hover {
+        background-image: linear-gradient(rgb(255, 1, 141), cyan); 
+    }
+
+    #pinterest:hover {
+        background-color:rgb(211, 21, 21);
+    }
+
+
+/* page content */
+
+.container {
+    position: relative;
+    top: 55px;
+    width: 100%;
+}
+
+.summary { 
+    display: flex;
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+.summary-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+    .summary-info h1, .summary-info p {
+        width: 70%;
+        font-weight: lighter;
+        text-align: center;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .summary-info h1 {
+        font-size: xx-large;
+    }
+
+    .summary-info p {
+        font-size: small;
+    }
+
+    #summary-getstarted {
+        text-decoration: none;
+        color: white;
+        background-color: teal;
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    #summary-getstarted:hover {
+        background-color: rgb(0, 100, 100)
+    }
+
+    .summary-info hr {
+        border-top: none;
+        margin-top: 10%;
+        margin-bottom: 3%;
+        width: 60%;
+    }
+
+    #summary-learnmore {
+        display: inline-block;
+        font-size: x-small;
+        text-decoration: none;
+        margin: 10px;
+        color: rgb(0, 175, 175);
+    }
+
+    #summary-learnmore:hover span {
+        display: inline-block;
+        transition: 0.15s ease-in;
+        transform: translateX(50%);
+    }
+
+    .summary img {
+        width: 50%;
+    }
+
+@media (min-width: 501px) and (max-width: 700px) {
+    /* tablet */
+
+    #navbar {
+        height: 35px;
+    }
+    #navbar-left, #navbar-right {
+        font-size: 8px;
+    }
+    #navbar img {
+        width: 30px;
+    }
+
+    .container, footer { 
+        top: 35px;
+    }
+
+    #admin-login {
+        top: 25px;
+        font-size: small;
+    }
+        #admin-login label,
+        #admin-login a,
+        #admin-login input
+        {
+            font-size: 7px;
+        }
+        #admin-login h4 {
+            margin: 0;
+        }
+        #admin-login a {
+            margin-top: 4px;
+        }
+
+    .summary-info h1 {
+        font-size: medium;
+    }
+    .summary-info p {
+        font-size: x-small;
+    }
+    #summary-getstarted {
+        font-size: 8px;
+        padding: 8px;
+    }
+    #summary-learnmore {
+        font-size: 8px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+        footer p, footer i {
+            font-size: x-small;
+            padding: 4px;
+        }
+        footer div {
+            margin-top: -10px;
+        }
+}
+
+@media (max-width: 500px) {
+    /* smarthpone */
+
+    #navbar {
+        height: 30px;
+    }
+    #navbar-left, #navbar-right {
+        font-size: 6px;
+    }
+    #navbar img {
+        width: 25px;
+    }
+
+    .container, footer { 
+        top: 30px;
+    }
+
+    #admin-login {
+        top: 25px;
+        font-size: xx-small;
+    }
+        #admin-login label,
+        #admin-login a,
+        #admin-login input
+        {
+            font-size: 6px;
+        }
+        #admin-login h4 {
+            margin: 0;
+        }
+        #admin-login a {
+            margin-top: 2px;
+            padding: 0;
+        }
+
+    .summary-info h1 {
+        font-size: xx-small;
+    }
+    .summary-info p {
+        font-size: 7px;
+    }
+    #summary-getstarted {
+        font-size: 6px;
+        padding: 6px;
+    }
+    #summary-learnmore {
+        font-size: 6px;
+    }
+
+    footer {
+        padding: 2px;
+    }
+        footer p, footer i {
+            font-size: 7px;
+            padding: 3px;
+        }
+        footer div {
+            margin-top: -10px;
+        }
+}

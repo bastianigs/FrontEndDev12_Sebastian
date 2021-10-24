@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Suits Shop</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/admin.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="/src/images/logos.jpg">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-left">
+            <a href="index.html"><img src="/src/images/logo.jpg" alt="logo"></a>
+            <div class="dropdown">
+                <a id="our-collection">OUR COLLECTION</a>
+                    <div class="dropdown-content">
+                        <a href="outfits.html">COMPLETE OUTFITS</a>
+                        <a id="lookbuilder">LOOK BUILDER</a>
+                        <a href="products.html">ALL PRODUCTS</a>
+                    </div>
+            </div>
+            <a href="howto.html">HOW IT WORKS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div id="navbar-right">
+            <a href="admin.html"><i class="fas fa-user-cog"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+    <div id="admin-warning">
+        <h5>You're on the way of removing product ID <span id="admin-warning-id"></span> </h5>
+        <h3>Are you sure ?</h3>
+        <div id="admin-warning-buttons">
+            <!-- <button><i class="fas fa-check"></i></button> -->
+            <!-- <button><i class="fas fa-ban"></i></button> -->
+            <button>YES</button>
+            <button>NO</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="summary">
+            <div class="summary-info">
+                <h1>Admin Panel</h1>
+            </div>
+        </div>
+        <div class="admin">
+            <form>
+            <div id="admin-form">
+                <h4>New Product - Form</h4>
+                <label for="form-image">Image URL:</label>
+                <input type="text" id="form-image">
+                <label for="form-name">Name:</label>
+                <input type="text" id="form-name">
+                <label for="form-price">Price:</label>
+                <input type="text" id="form-price">
+                <label for="form-stock">Stock:</label>
+                <input type="text" id="form-stock">
+                <label for="form-type">Type:</label>
+                <select id="form-type">
+                    
+                </select>
+                <label for="form-desc">Description:</label>
+                <textarea rows=3 cols=0 id="form-desc"></textarea>
+                <label for="form-highlights">Highlights:</label>
+                <input type="text" id="form-highlights" placeholder="optional - IDs split by comma">
+                <div id="form-buttons">
+                    <a>CLEAR</a>
+                    <a>CREATE</a>
+                </div>
+            </div>
+            </form>
+            <div id="admin-table">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Suits Shop © 2021 All Rights Reserved</p>
+        <div>
+            <a href=""><i id="instagram" class="fab fa-instagram"></i></a>
+            <a href=""><i id="facebook" class="fab fa-facebook-f"></i></a>
+            <a href=""><i id="pinterest" class="fab fa-pinterest-p"></i></a>
+            <a href=""> <i id="twitter" class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="/src/admin.js" type="module"></script>
+    <script src="/src/utils.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* content */
+
+.summary {
+    padding: 40px 0;
+}
+
+.empty-cart {
+    background-color: teal;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s ease;
+}
+    .empty-cart:hover {
+        cursor: pointer;
+    }
+    .empty-cart a {
+        text-decoration: none;
+        color: white;
+    }
+    .empty-cart:hover a {
+        font-size: large;
+        transition: 0.5s ease;
+        text-decoration: underline;
+    }
+    .empty-cart h3 {
+        color: white;
+        font-weight: lighter;
+    }
+
+.cart {
+    display: flex;
+    margin: 40px 0;
+    justify-content: center;
+    /* background-color: teal; */
+}
+    .cart p {
+        /* border: 2px solid teal;
+        border-bottom: none; */
+        width: 180px;
+        /* margin-left: 30px; */
+        padding: 5px;
+        padding-left: 15px;
+    }
+    .cart p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: rgb(13, 127, 172);
+    }
+    
+.cart table {
+    transition: 0.5s ease;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid teal;
+}
+    .cart table a {
+        text-decoration: none;
+        color: white;
+    }
+    .cart tr {
+        background-color: teal;
+    }
+    .cart tr:hover a {
+        text-decoration: underline;
+    }
+    .cart th {
+        padding: 10px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        font-weight: lighter;
+    }
+    .cart td {
+        color: white;
+        padding: 10px;
+    }
+    .cart .remove {
+        color: white;
+        cursor: pointer;
+    }
+    .cart .remove:hover {
+        color: black;
+    }
+
+table img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.cart-payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid teal;
+    /* border-left: none; */
+    width: 200px;
+    height: 100px;
+    transition: 0.5s ease;
+}
+    .cart-payment a {
+        width: 100%;
+        border: none;
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .cart-payment a:hover {
+        background-color: black;
+        transition: 0.3s ease;
+    }
+
+.quant {
+    text-align: center;
+}
+    .inc {
+        color: rgb(148, 13, 13);
+        font-size: large;
+    }
+    .dec {
+        color: black;
+        font-size: large;
+    }
+    .inc:hover {
+        font-size: xx-large;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .dec:hover {
+        font-size: xx-large;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }

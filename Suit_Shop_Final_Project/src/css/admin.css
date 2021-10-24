@@ -1,0 +1,156 @@
+/* ----------------------------------------------------- */
+/* content */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary {
+    padding: 40px 0;
+}
+
+.admin {
+    width: 90%;
+    margin: 10px auto;
+}
+
+/* ----------------------------------------------------- */
+/* warning feedback */
+
+#admin-warning {
+    left: 30%;
+    top: 40%;
+    width: 40%;
+    position: fixed;
+    background-color: rgb(209, 97, 97);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    /* border-radius: 20%; */
+    /* transition: 0.5s ease; */
+    display: none;
+    z-index: 1;
+}
+#admin-warning-buttons {
+    margin-top: 10px;
+}
+    #admin-warning-buttons button {
+        padding: 10px;
+    }
+
+/* ----------------------------------------------------- */
+/* admin form - new product */
+
+#admin-form {
+    transition: 0.5s ease;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid teal;
+    background-color: white;
+}
+    #admin-form h4 {
+        /* background-color: teal; */
+        /* color: white; */
+        border-bottom: 2px solid teal;
+        text-decoration: underline;
+        padding: 10px;
+    }
+    #admin-form input, #admin-form select, #admin-form textarea {
+        width: 80%;
+    }
+    #admin-form label {
+        margin: 10px 0 5px 0;
+        font-size: small;
+    }
+
+#form-buttons {
+    margin-top: 15px;
+    text-align: right;
+}
+    #form-buttons a {
+        border: 2px solid teal;
+        background-color: teal;
+        color: white;
+        padding: 5px;
+        margin-left: 15px;
+    }
+    #form-buttons a:first-of-type {
+        background-color: rgb(243, 203, 116);
+        border-color: rgb(243, 203, 116);
+        color: black;
+    }
+    #form-buttons a:hover {
+        background-color:rgb(36, 36, 36);
+        border-color: rgb(36, 36, 36);
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+/* ----------------------------------------------------- */
+/* products list */
+
+.admin table {
+    transition: 0.5s ease;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid teal;
+}
+    .admin img {
+        width: 100px;
+    }
+    .admin img:hover {
+        position: absolute;
+        width: 500px;
+        transition: 0.3s ease;
+    }
+    .admin table a {
+        text-decoration: none;
+        color: white;
+    }
+    .admin tr {
+        background-color: teal;
+    }
+    .admin th {
+        padding: 10px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        font-weight: lighter;
+    }
+    .admin td {
+        color: white;
+        padding: 10px;
+    }
+    .admin hr {
+        margin: 10px 0;
+    }
+    .admin .remove, .admin .edit {
+        cursor: pointer;
+    }
+    .admin .remove:hover, .admin .edit:hover {
+        color: black;
+    }
+    .finish {
+        color: red;
+    }
+    .finish:hover, .edit:hover .finish {
+        color: black;
+        font-size: xx-large;
+        transition: 0.3s ease;
+    }
+
+#hlsNames, .type::first-line {
+    /* for some reasone, just ".type" was not working... 
+    even if ".type:hover" was doing the job when hoevered */
+
+    color: rgb(243, 203, 116);
+}
+
+#admin-table select, #admin-table textarea {
+    padding: 7px;
+}

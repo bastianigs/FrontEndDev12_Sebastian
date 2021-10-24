@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.summary {
+    /* background-color: rgb(211, 211, 211); */
+    background-image: url("/src/images/outfits.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+
+.summary-info {
+    width: 100%;
+    color: black;
+    margin-bottom: 50px;
+}
+    .summary-info h1 {
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .summary-info p {
+        font-style: normal;
+        font-size: medium;
+    }
+
+
+/* content */
+
+
+
+.italic {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#outfits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.outfits-type {
+    display: flex;
+    height: 50%;
+    margin: 40px 0;
+}
+    .outfits-type > img {
+        padding: 5%;
+        height: 450px;
+    }
+    .outfits-type img[src="/src/images/outfit-type-1.jpg"] {
+        background-color: #f0e5e8;
+    }
+    .outfits-type img[src="/src/images/outfit-type-2.jpg"] {
+        background-color: #4c667e;
+    }
+    .outfits-type img[src="/src/images/outfit-type-3.jpg"] {
+        background-color: #314846;
+    }
+
+
+.outfits-presentation {
+    margin-left: 30px;
+    padding: 20px;
+}
+    .outfits-presentation h1 {
+        font-weight: lighter;
+        width: 70%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .outfits-presentation hr {
+        margin: 10px 0;
+        border-top: none;
+    }
+
+
+.outfits-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 1.3rem;
+}
+
+
+.outfit-card {
+    text-align: center;
+}
+    .outfit-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .outfit-card a {
+        text-decoration: none;
+        font-size: xx-small;
+        color: grey;
+    }
+    .outfit-card:hover a {
+        cursor: pointer;
+        font-size: x-small;
+        transition: 0.5s ease;
+    }
+    .outfit-card:hover img {
+        opacity: 0.5;
+        transition: 0.5s ease;
+    }
+
+@media (max-width: 550px) {
+    .outfits-type {
+        flex-direction: column;
+        align-items: center;
+    }
+    .outfits-type > img {
+        width: 80%;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-img img {
+        width: 100%;
+    }
+    .details-info {
+        width: 100%;
+        align-items: center;
+    }
+    .info-buttons {
+        width: 100%;
+    } */
+}

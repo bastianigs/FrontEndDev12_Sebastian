@@ -1,0 +1,133 @@
+/* content */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#feedback {
+    display: none;
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: rgb(17, 146, 129);
+    /* transition: 0.5s ease; */
+    color: white;
+    text-align: center;
+}
+    #feedback a {
+        color: white;
+    }
+
+.details {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    /* width: 0 auto; */
+}
+
+.details-img img{
+    height: 400px;
+    /* padding: 30px; */
+    margin: 30px;
+}
+.details-info {
+    width: 30%;
+    /*margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    /* .details-info h4 {
+        font-weight: lighter;
+    } */
+    .details-info i {
+        font-size: small;
+        margin: 0 1px;
+    }
+    .details-info h6 {
+        color: grey;
+    }
+    .details-info h6:first-of-type {
+        font-size: xx-small;
+        font-weight: lighter;;
+    }
+    .details-info button {
+        margin: 10px 0;
+        background-color: #0a8080;
+        border-color: #0a8080;
+        color: white;
+        padding: 10px;
+        font-weight: bolder;;
+    }
+    .details-info button:hover {
+        background-color: black;
+        border-color: black;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .details-info h5 {
+        font-weight: lighter;
+    }
+
+#price {
+    color: green;
+    font-size: medium;
+    font-weight: lighter;
+}
+    
+.product-review {
+    display: flex;
+    font-size: x-small;
+    margin: 5px 0;
+}
+
+.info-data {
+    color: grey;
+    /* margin-top: 10px; */
+}
+    .info-data h6 {
+        margin-bottom: 10px;
+    }
+    .info-data ul {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .info-data li {
+        font-size: small;
+        margin-top: 4px;
+    }
+    .info-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+@media (max-width: 600px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-img img {
+        width: 100%;
+    }
+    .details-info {
+        width: 100%;
+        align-items: center;
+    }
+    .info-buttons {
+        width: 100%;
+    }
+}
+@media (min-width: 601px) and (max-width: 730px) {
+    .details-img img {
+        height: 300px;
+        /* object-fit: cover; */
+        /* height: 50%; */
+        /* width: 50%; */
+        /* width: 100%; */
+    }
+    .details-info {
+        width: 50%;
+    }
+}

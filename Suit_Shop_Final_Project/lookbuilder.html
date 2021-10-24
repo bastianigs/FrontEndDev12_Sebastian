@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix | Suits Shop</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/mix.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="icon" href="/src/images/logos.jpg">
+</head>
+<body>
+    <div id="navbar">
+        <div id="navbar-left">
+            <a href="index.html"><img src="/src/images/logo.jpg" alt="logo"></a>
+            <div class="dropdown">
+                <a id="our-collection">OUR COLLECTION</a>
+                    <div class="dropdown-content">
+                        <a href="outfits.html">COMPLETE OUTFITS</a>
+                        <a id="lookbuilder">LOOK BUILDER</a>
+                        <a href="products.html">ALL PRODUCTS</a>
+                    </div>
+            </div>
+            <a href="howto.html">HOW IT WORKS</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+        <div id="navbar-right">
+            <div id="admin-access">
+                <a id="admin-icon"><i class="fas fa-user-cog"></i></a>
+                <form id="admin-login">
+                    <h4>Admin Panel</h4>
+                        <label for="admin-name">Username:</label>
+                        <input type="text" id="admin-name">
+                        <label for="admin-pass">Password:</label>
+                        <input type="password" id="admin-pass" autocomplete="on">
+                        <a id="admin-login-btn">LOGIN</a>
+                </form>
+            </div>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="summary">
+            <div class="summary-info">
+                <h1>Build Your Look</h1>
+            </div>
+        </div>
+        <div id="mix">
+            <div id="mix-look">
+                <img src="/src/images/empty-look.png" alt="empty-look">
+            </div>
+            <div id="continue">
+                <p>CONTINUE</p>
+            </div>
+            <div id="mix-list">
+                <div id="0" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Suit or Tuxedo</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="1" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Shirt</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="2" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Neckwear</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="3" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Shoes</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="4" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Belt or Suspenders</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="5" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Pocket Square</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="6" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Vest or Cummerbund</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="7" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Cufflinks</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="8" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Studs</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+                <div id="9" class="product-line">
+                    <span class="product">
+                        <a>+</a>
+                        <span class="product-data">
+                            <p>Add <span class="bolded">Tie Clip</span></p>
+                        </span>
+                    </span>
+                    <span class="actions">
+                        <span class="search"><i class="fas fa-search"></i></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Suits Shop © 2021 All Rights Reserved</p>
+        <div>
+            <a href=""><i id="instagram" class="fab fa-instagram"></i></a>
+            <a href=""><i id="facebook" class="fab fa-facebook-f"></i></a>
+            <a href=""><i id="pinterest" class="fab fa-pinterest-p"></i></a>
+            <a href=""> <i id="twitter" class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="/src/utils.js"></script>
+    <script src="/src/mix.js"></script>
+    <script src="/src/app.js"></script>
+</body>
+</html>
