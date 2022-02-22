@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+#search-container {
+    width: 500px;
+    margin: 30px auto;
+}
+
+#bar {
+    /* width: 500px;
+    margin: 30px auto; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    border: 2px solid gray;
+    border-bottom: 4px solid gray;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: whitesmoke;
+}
+    #bar .wrongText {
+        color: red;
+    }
+    #search-container .wrong {
+        border-bottom-color: red;
+    }
+
+#cover {
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+
+    background-color: lightskyblue;
+
+    z-index: -1;
+}
+
+input {
+    margin: 0 5px;
+    /* background-color: transparent;  */
+}
+
+input:first-of-type {
+    width: 100px;
+    border: 0;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    background-color: transparent;
+    margin-left: 8px;
+}
+
+input:focus, textarea:focus, select:focus{
+    /* removing some default chrome behaviour */
+    outline: none;
+}
+
+#weather {
+    width: 496px;
+    height: 300px;
+
+    position: relative;
+    display: flex;
+    bottom: 30px;
+    justify-content: center;
+
+    /* border: 2px solid gray; */
+    /* background-color: lightsalmon; */
+    background-image: linear-gradient( lightsalmon, lightskyblue);
+    /* background-image: linear-gradient( #90c568, lightskyblue ); */
+
+    visibility: hidden;
+    z-index: -2;
+    /* animation: strikeInAnimation ease 2s; */
+}
+
+/* @keyframes strikeInAnimation {
+    0% {
+        bottom: 300px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 30px;
+        opacity: 1;
+     }
+} */
+
+#weather-now {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    margin: 0 10px;
+    color: white;
+
+
+    /* border: 2px solid rgb(54, 50, 99); */
+}
+    /*#weather-now*/ #name {
+        display: inline-block;
+        /* background-color: #ac423e; */
+        /* background-color: #54a318; */
+        background-color: rgb(192, 123, 96);
+
+        padding: 10px;
+    }
+    /*#weather-now*/ #data {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+        /*#weather-now*/ #info {
+            display: flex;
+            flex-direction: column;
+        }
+            /*#weather-now*/ #temp {
+                font-size: xx-large;
+                font-weight: bold;
+            }
+            /*#weather-now*/ #feeltemp {
+                font-size: small;
+            }
+            /*#weather-now*/ #description {
+                margin: 10px 0 0 20px;
+            }
+            /*#weather-now*/ #limits {
+                margin: 10px 0 0 20px;
+            }
+            /*#weather-now*/ #max {
+                margin-left: 10px;
+            }
+        /*#weather-now*/ #icon img {
+            width: 155px;
+        }
+
+
